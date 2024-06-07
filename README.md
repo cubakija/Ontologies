@@ -1,1 +1,1 @@
-This ontology is about IT/OT Infrastructure Qualification in Life science.
+This ontology (still in building) is about IT/OT Infrastructure Qualification in Life science.
