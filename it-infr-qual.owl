@@ -1,0 +1,702 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://lumii.lv/ontologies/it-infr-qual.owl#"
+     xml:base="http://lumii.lv/ontologies/it-infr-qual.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:it-infr-qual="http://lumii.lv/ontologies/it-infr-qual.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace">
+    <owl:Ontology rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#complyWith -->
+
+    <owl:ObjectProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#complyWith">
+        <rdfs:range rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#RegulatoryAndLegalRequirements"/>
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT&amp;OT_Infrastructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#definedIn -->
+
+    <owl:ObjectProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#definedIn">
+        <rdfs:range rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#Annex11"/>
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GxPregulation"/>
+        <owl:inverseOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#is"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#hasApplicableClause -->
+
+    <owl:ObjectProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#hasApplicableClause">
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#Annex11"/>
+        <rdfs:range rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#Clause"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#hasCategory -->
+
+    <owl:ObjectProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#hasCategory">
+        <rdfs:range rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPsoftwareCategory"/>
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#SoftwareComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#hasComponent">
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTinfrastructureSoftware"/>
+        <rdfs:range rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#SoftwareComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#hasLifeCyclePhase -->
+
+    <owl:ObjectProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#hasLifeCyclePhase">
+        <rdfs:range rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#LifeCycle"/>
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT&amp;OT_Infrastructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#hasModel -->
+
+    <owl:ObjectProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#hasModel">
+        <rdfs:range rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OT_Model"/>
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT&amp;OT_Infrastructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#is -->
+
+    <owl:ObjectProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#is">
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#Annex11"/>
+        <rdfs:range rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GxPregulation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#GAMPCategory -->
+
+    <owl:DatatypeProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPCategory">
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPsoftwareCategory"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#LifeCycle -->
+
+    <owl:DatatypeProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#LifeCycle">
+        <owl:equivalentProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#applicablePhase"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#ModelLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#ModelLevel">
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OT_Model"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#applicablePhase -->
+
+    <owl:DatatypeProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#applicablePhase">
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#Clause"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#clauseNum -->
+
+    <owl:DatatypeProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#clauseNum">
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#Clause"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#phase -->
+
+    <owl:DatatypeProperty rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#phase">
+        <rdfs:domain rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#LifeCycle"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>assessment&amp;audit</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>contract</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>operation&amp;monitoring</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Annex11 -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Annex11"/>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Antivirus -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Antivirus">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTinfrastructureSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#ApplicationsAndData -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#ApplicationsAndData">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#ModelLevel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPsoftwareCategory"/>
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OT_Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Backup -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Backup">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTinfrastructureSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#BackupService -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#BackupService">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTservicesOperationAndSupport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#BusinessContinuity -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#BusinessContinuity">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTservicesOperationAndSupport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Cat1 -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Cat1">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPsoftwareCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Cat3 -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Cat3">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPsoftwareCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Cat4 -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Cat4">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPsoftwareCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Cat5 -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Cat5">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPsoftwareCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Clause -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Clause"/>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#CyberSecurity -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#CyberSecurity">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTservicesOperationAndSupport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#DataPrivacy -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#DataPrivacy">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#LegalRequirements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#DisasterRecovery -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#DisasterRecovery">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTservicesOperationAndSupport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#GAMPsoftwareCategory -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPsoftwareCategory">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPCategory"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPCategory"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#GDPR -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#GDPR">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#DataPrivacy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#GxPregulation -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#GxPregulation">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#RegulatoryAndLegalRequirements"/>
+        <owl:disjointWith rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#LegalRequirements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#GxPrelevantApplicationsAndData -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#GxPrelevantApplicationsAndData">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#ApplicationsAndData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#HIPPA -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#HIPPA">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#DataPrivacy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Hipervisor -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Hipervisor">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTinfrastructureSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#IT_Infrastructure -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#IT_Infrastructure">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT&amp;OT_Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#IT_OT_Model -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OT_Model">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#ModelLevel"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#ModelLevel"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTinfrastructureSoftware -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTinfrastructureSoftware">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#ModelLevel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPsoftwareCategory"/>
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OT_Model"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#hasComponent"/>
+                <owl:onClass rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#SoftwareComponent"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTservicesOperationAndSupport -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTservicesOperationAndSupport">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#ModelLevel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OT_Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#IncidentManagement -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#IncidentManagement">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTservicesOperationAndSupport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#IntellectualProperty -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#IntellectualProperty">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#LegalRequirements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#LegalRequirements -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#LegalRequirements">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#RegulatoryAndLegalRequirements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#LifeCycle -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#LifeCycle"/>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#NetworkMonitoring -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#NetworkMonitoring">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTinfrastructureSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#NonGxPrelevantApplicationsAndData -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#NonGxPrelevantApplicationsAndData">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#ApplicationsAndData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#OS -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#OS">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTinfrastructureSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#OT_Infrastructure -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#OT_Infrastructure">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT&amp;OT_Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#PhysicalInfrastructureComponents -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#PhysicalInfrastructureComponents">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#ModelLevel"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OT_Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#RegulatoryAndLegalRequirements -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#RegulatoryAndLegalRequirements">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#SLA -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#SLA">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTservicesOperationAndSupport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Servers -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Servers">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#PhysicalInfrastructureComponents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#SoftwareComponent -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#SoftwareComponent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#hasCategory"/>
+                <owl:onClass rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPsoftwareCategory"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#hasCategory"/>
+                <owl:onClass rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#GAMPsoftwareCategory"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">5</owl:maxQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#StorageSystems -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#StorageSystems">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#PhysicalInfrastructureComponents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#UserAccountManagement -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#UserAccountManagement">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTservicesOperationAndSupport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#VPNSolutions -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#VPNSolutions">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTinfrastructureSoftware"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Workstations -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Workstations">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#PhysicalInfrastructureComponents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Configuration&amp;ChangeManagement -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Configuration&amp;ChangeManagement">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#IT_OTservicesOperationAndSupport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#IT&amp;OT_Infrastructure -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#IT&amp;OT_Infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#hasLifeCyclePhase"/>
+                <owl:onClass rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#LifeCycle"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#KRITIS_Directive_2008/114/EC -->
+
+    <owl:Class rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#KRITIS_Directive_2008/114/EC">
+        <rdfs:subClassOf rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#LegalRequirements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://lumii.lv/ontologies/it-infr-qual.owl#Clause2 -->
+
+    <owl:NamedIndividual rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Clause2">
+        <rdf:type rdf:resource="http://lumii.lv/ontologies/it-infr-qual.owl#Clause"/>
+        <clauseNum>2</clauseNum>
+        <applicablePhase>Assessment&amp;Audit</applicablePhase>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#IT_Infrastructure">
+        <rdfs:comment>Computer systems and related infrastructure to store, retrieve, transmit,
+and manipulate data or information.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#Clause2">
+        <rdfs:comment>Staff training, Records &amp; Education</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#LegalRequirements">
+        <rdfs:comment>The applicable legal framework depends on type of data managed (processed, stored) in the cloud</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#OT_Infrastructure">
+        <rdfs:comment>Computer system – incl. the related infrastructure – that detects or causes a change, through the direct monitoring and/or control of industrial equipment, assets, processes and events.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#HIPPA">
+        <rdfs:comment>Health Insurance Portability &amp; Accountability Act</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#SLA">
+        <rdfs:comment>Service Level Agreement</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#KRITIS_Directive_2008/114/EC">
+        <rdfs:comment>EC supports the implementation of the European
+Programme for Critical Infrastructure Protection</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#DataPrivacy"/>
+            <rdf:Description rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#IntellectualProperty"/>
+            <rdf:Description rdf:about="http://lumii.lv/ontologies/it-infr-qual.owl#KRITIS_Directive_2008/114/EC"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.0.1) http://owlapi.sourceforge.net -->
+
